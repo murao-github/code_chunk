@@ -1,0 +1,24 @@
+.row.justify-content-center.pt-4
+    .card.col-8.my-2.px-0
+        .card-header
+            span
+                span.user_name シンディ
+                small.user_id @sinsy
+        .card-body.px-2.py-3
+            p
+                | 現在時刻をサクッと取得する。変数の埋め込みにはテンプレート構文を使う（ES6以降じゃないと使えない...）。
+        .card-pre.text-light.hljs
+            .pre-code-header
+                span.file-name style="color: #e6e1dc;" now_date.js
+                span.badge.badge-pill.text-light.lang-badge style="margin: 0 1em; background-color: #d2b51c;" JavaScript
+            pre.text-light.m-0
+                code
+                    |
+                        var now = new Date();
+                        var Year = now.getFullYear();
+                        var Month = now.getMonth()+1;
+                        var Date = now.getDate();
+
+                        console.log(`${Year}年${Month}月${Date}日`);
+                        //=> 2020年2月7日
+        .card-footer.align-light 投稿：2020/02/05
