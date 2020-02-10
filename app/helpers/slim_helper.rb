@@ -1,0 +1,2 @@
+module SlimHelper
+end
